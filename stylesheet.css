@@ -1,0 +1,159 @@
+body{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.bgimage{
+	background-image: url('bgimage.jpg');	/*Photo by Luca Zanon on Unsplash*/
+	height: 50vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.container{
+	background-color: rgba(0,3,40,0.2);
+	width: 20%;
+	margin: auto;
+	margin-top: 250px;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-radius: 10px;
+	color: #000328;
+}
+
+.container h1{
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 0;
+	font-family: Merriweather;
+	color: #D0D0D8;
+}
+
+.content{
+	font-family: Roboto;
+}
+
+#scale{
+	margin-top: 1em;
+	visibility: hidden;
+}
+
+.scaleContainer{
+	background-color: #D0D0D8;
+	display: inline;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 10px;
+}
+
+.celsius, .fahrenheit{
+	background-color: #D0D0D8;
+	display: inline;	
+}
+
+.celsius{
+	padding-right: 5px;
+	padding-left: 4px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.fahrenheit{
+	padding-left: 5px;
+	padding-right: 4px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.active{
+	background-color: #F7F0F5;
+}
+
+.celsius.active{
+	padding-right: 5px;
+	border-left: 2px solid #000328;
+}
+
+.fahrenheit.active{
+	padding-left: 5px;
+	border-right: 2px solid #000328;
+}
+
+footer{
+	margin-top: 1em;
+}
+
+@media(max-width: 1670px){
+	.container{
+		width: 25%;
+		margin-top: 200px;
+	}
+	.bgimage{
+		height: 90vh;
+	}
+}
+
+@media(max-width: 1320px){
+	.container{
+		width: 30%;
+		margin-top: 170px;
+	}
+}
+
+@media(max-width: 1040px){
+	.container{
+		width: 35%;
+		margin-top: 150px;
+	}
+	.scaleContainer{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.fahrenheit{
+		padding-right: 10px;
+	}
+	.celsius{
+		padding-left: 10px;
+	}
+}
+
+@media(max-width: 850px){
+	.container{
+		width: 40%;
+	}
+	.scaleContainer{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.fahrenheit{
+		padding-right: 15px;
+	}
+	.celsius{
+		padding-left: 15px;
+	}
+}
+
+@media(max-width: 650px){
+	.container{
+		width: 45%;
+	}
+}
+
+@media(max-width: 570px){
+	.container{
+		width: 50%;
+	}
+}
+
+@media(max-width: 480px){
+	.container{
+		width: 55%;
+	}
+}
+
+@media(max-width: 420px){
+	.container{
+		width: 95%;
+	}
+}

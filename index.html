@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Local Weather App</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="javascript.js"></script>
+	</head>
+	<body class="bgimage">
+		<div class="container">
+			<h1>Weather App</h1>
+			<div class="content">
+				<div id="loading">
+					<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+				</div>
+
+				<p id="location"></p>
+				<p id="temperature"></p>
+				<p id="weather"></p>
+				<i id="icon" class="wi"></i>
+				<div id="scale">
+					<div class="scaleContainer">
+						<div id="fahrenheit" class="fahrenheit" onclick="scaleFahrenheit()">°F</div><div id="celsius" class="active celsius" onclick="scaleCelsius()">°C</div>
+					</div>
+				</div>		
+				<footer>By Deborah Harlaar</footer>
+			</div>
+		</div>
+	</body>
+</html>
